@@ -1,0 +1,111 @@
+body {
+  font-family: 'Roboto Slab', serif;
+  height: 100vh;
+  background: linear-gradient(#d4f1f4, #e3f5f8) no-repeat fixed;
+  align: center;
+}
+
+/* p {
+  display: inline-block;
+} */
+
+.row {
+  margin: 4vh 0;
+}
+
+input {
+  height: 40px;
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+}
+
+input:focus {
+  outline: solid 2px #51a9a0;
+}
+
+/* makes text box background stay white if text is autofilled */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+textarea {
+  width: 80%;
+  height: 120px;
+  text-align: center;
+  padding-top: 45px;
+  border: none;
+  border-radius: 15px;
+}
+
+textarea:focus {
+  outline: solid 2px #51a9a0;
+}
+
+textarea::placeholder {
+  text-align: center;
+  line-height: 25px;
+}
+
+/* Gets rid of odd outline that would happen when slider is clicked */
+#volume:focus {
+  outline: none;
+}
+
+/* Gets rid of default volume slider styling */
+input[type="range"] {
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+/* Changes style of volume slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #164255;
+  height: 5px;
+  border-radius: 15px;
+}
+
+input[type="range"]::-moz-range-track {
+  background: #164255;
+  height: 5px;
+  border-radius: 15px;
+}
+
+/* Changes style of volume slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  background: #51a9a0;
+  margin-top: -5px;
+  border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  background: #51a9a0;
+  margin-top: -5px;
+  border-radius: 50%;
+}
+
+button {
+  font-family: 'Cookie', cursive;
+  font-style: italic;
+  font-size: 32px;
+  height: 50px;
+  width: 100px;
+  margin-bottom: 50px;
+  background-color: #164255;
+  color: white;
+  transition: ease-in-out .3s;
+  border: none;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: #51a9a0;
+}
